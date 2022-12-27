@@ -3,7 +3,7 @@
 using namespace std;
 
 
-int closeToRight(vector<int> A,int n, int target)
+int closeToLeft(vector<int> A,int n, int target)
 {
     int l = -1, r = n; 
     while (r - l > 1) {
@@ -31,7 +31,7 @@ int main()
         int num;
         cin>>num;
 
-        cout<<closeToRight(input, n, num )+ 1<<endl;
+        cout<<closeToLeft(input, n, num + 1)<<endl;;
     }
 
     return 0;
